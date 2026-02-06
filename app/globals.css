@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-fall {
+  animation: fall 8s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes petalFall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes gentleSway {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes heartFloat {
+  0% {
+    transform: translateY(10px) scale(0.95);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-10px) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px) scale(0.95);
+    opacity: 0.6;
+  }
+}
+
+@keyframes ringGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(255, 182, 193, 0.9);
+  }
+}
+
+@keyframes proposeBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-petal-fall {
+  animation: petalFall 10s linear infinite;
+}
+
+.animate-sway {
+  animation: gentleSway 4s ease-in-out infinite;
+}
+
+.animate-heart-float {
+  animation: heartFloat 3s ease-in-out infinite;
+}
+
+.animate-ring-glow {
+  animation: ringGlow 2.4s ease-in-out infinite;
+}
+
+.animate-propose-bounce {
+  animation: proposeBounce 2.5s ease-in-out infinite;
+}

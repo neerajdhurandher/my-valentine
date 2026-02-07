@@ -150,7 +150,7 @@ export default function MyRosePage() {
           {/* Special message */}
           <div className="pt-4">
             <p className="text-pink-200 text-lg italic">
-              "A rose by any other name would smell as sweet..."
+              &ldquo;A rose by any other name would smell as sweet...&rdquo;
             </p>
             <p className="text-white text-sm mt-2 opacity-75">
               — But none as beautiful as you

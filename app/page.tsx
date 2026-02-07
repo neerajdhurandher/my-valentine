@@ -96,7 +96,7 @@ export default function Home() {
         </div>
 
         <p className="mt-8 text-xs sm:text-sm text-pink-200 opacity-75">
-          Based on today's date, you'll be taken to a special page...
+          Based on today&rsquo;s date, you&rsquo;ll be taken to a special page...
         </p>
       </div>
 

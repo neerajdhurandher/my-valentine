@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import NextButton from "@/components/NextButton";
+import SetFavicon from "@/components/SetFavicon";
 
 export const metadata: Metadata = {
   title: "My Soulmate",
@@ -21,7 +22,8 @@ const petals = [
 export default function MySoulmatePage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-pink-50 via-pink-100 to-rose-200 relative overflow-hidden">
-      {/* Light pink rose petals shower */}
+      <SetFavicon emoji="💍" title="My Soulmate" />
+      {/* Light pink rose petals shower */}}
       <div className="absolute inset-0 pointer-events-none">
         {petals.map((petal, index) => (
           <div
@@ -107,7 +109,7 @@ export default function MySoulmatePage() {
               start: new Date(2026, 1, 6),
               end: new Date(2026, 1, 8),
             }}
-            destination="/"
+            destination="/my-chocolate"
           />
         </div>
       </div>

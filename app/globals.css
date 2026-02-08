@@ -105,3 +105,268 @@
 .animate-propose-bounce {
   animation: proposeBounce 2.5s ease-in-out infinite;
 }
+
+@keyframes chocoFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes chocoDrip {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(12px);
+  }
+}
+
+@keyframes chocoGlow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 0 rgba(244, 189, 145, 0));
+  }
+  50% {
+    filter: drop-shadow(0 0 10px rgba(244, 189, 145, 0.9));
+  }
+}
+
+.animate-choco-float {
+  animation: chocoFloat 3.6s ease-in-out infinite;
+}
+
+.animate-choco-drip {
+  animation: chocoDrip 2.6s ease-in-out infinite alternate;
+}
+
+.animate-choco-glow {
+  animation: chocoGlow 3.2s ease-in-out infinite;
+}
+
+@keyframes riverFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes candyFloat {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(6deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes riverWave {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 120px 0;
+  }
+}
+
+.choco-river {
+  position: relative;
+  overflow: hidden;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #5a2f26, #8b4a2b, #6d3b2d, #8b4a2b);
+  background-size: 200% 100%;
+  /* animation: riverFlow 6s linear infinite; */
+}
+
+.choco-stream {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.12), rgba(255,255,255,0), rgba(255,255,255,0.12));
+  background-size: 200% 100%;
+  animation: riverFlow 4s linear infinite;
+  opacity: 0.6;
+}
+
+.choco-wave {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='30' viewBox='0 0 120 30'><path d='M0 20 C 15 10, 30 10, 45 20 C 60 30, 75 30, 90 20 C 105 10, 120 10, 120 10 L 120 30 L 0 30 Z' fill='rgba(255,255,255,0.22)'/></svg>");
+  background-repeat: repeat-x;
+  background-size: 120px 30px;
+  background-position: 0 100%;
+  opacity: 0.7;
+  animation: riverWave 4s linear infinite;
+}
+
+.candy-float {
+  animation: candyFloat 3s ease-in-out infinite;
+}
+
+@keyframes teddyRun {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.animate-teddy-run {
+  animation: teddyRun 4s linear infinite;
+}
+
+@keyframes teddyRunRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(50vw - 100px));
+  }
+}
+
+.animate-teddy-run-right {
+  animation: teddyRunRight 3s ease-in-out infinite;
+}
+
+@keyframes teddyRunLeft {
+  0% {
+    transform: translateX(0) scaleX(-1);
+  }
+  100% {
+    transform: translateX(calc(-50vw + 100px)) scaleX(-1);
+  }
+}
+
+.animate-teddy-run-left {
+  animation: teddyRunLeft 3s ease-in-out infinite;
+}
+
+@keyframes heartChase1 {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(20vw) translateY(0);
+    opacity: 0;
+  }
+}
+
+@keyframes heartChase2 {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(20vw) translateY(-20px);
+    opacity: 0;
+  }
+}
+
+@keyframes heartChase3 {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(20vw) translateY(20px);
+    opacity: 0;
+  }
+}
+
+.animate-heart-chase-1 {
+  animation: heartChase1 3.5s ease-in infinite;
+}
+
+.animate-heart-chase-2 {
+  animation: heartChase2 3.5s ease-in 0.3s infinite;
+}
+
+.animate-heart-chase-3 {
+  animation: heartChase3 3.5s ease-in 0.6s infinite;
+}
+
+@keyframes teddyFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-teddy-float {
+  animation: teddyFloat 4s ease-in-out infinite;
+}
+
+@keyframes teddyHug {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.8;
+  }
+}
+
+.animate-teddy-hug {
+  animation: teddyHug 2s ease-in-out infinite;
+}
+
+@keyframes teddyBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-teddy-bounce {
+  animation: teddyBounce 2.5s ease-in-out infinite;
+}
+
+@keyframes teddySway {
+  0%, 100% {
+    transform: rotate(0deg) translateY(0);
+  }
+  25% {
+    transform: rotate(-5deg) translateY(-5px);
+  }
+  75% {
+    transform: rotate(5deg) translateY(-5px);
+  }
+}
+
+.animate-teddy-sway {
+  animation: teddySway 2.8s ease-in-out infinite;
+}

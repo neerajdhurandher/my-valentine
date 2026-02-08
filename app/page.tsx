@@ -16,6 +16,8 @@ export default function Home() {
       const dateMap: Record<string, string> = {
         "2-7": "/my-rose",
         "2-8": "/my-soulmate",
+        "2-9": "/my-chocolate",
+        "2-10": "/my-teddy",
         // Add more dates as needed
       };
 

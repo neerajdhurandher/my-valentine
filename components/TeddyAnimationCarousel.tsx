@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 interface Animation {
   url: string;
@@ -41,9 +42,12 @@ export default function TeddyAnimationCarousel() {
   return (
     <div className="relative w-full h-auto mb-2 flex items-center justify-center  rounded-2xl p-2">
       <div className={`transition-opacity duration-300 ${isTransitioning ? "opacity-0" : "opacity-100"}`}>
-        <img
+        <Image
           src={animations[currentIndex].url}
           alt={animations[currentIndex].alt}
+          width={500}
+          height={500}
+          unoptimized
           className="w-full max-w-md h-auto rounded-xl shadow-lg"
         />
       </div>

@@ -23,7 +23,7 @@ export default function MySoulmatePage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-pink-50 via-pink-100 to-rose-200 relative overflow-hidden">
       <SetFavicon emoji="💍" title="My Soulmate" />
-      {/* Light pink rose petals shower */}}
+      {/* Light pink rose petals shower */}
       <div className="absolute inset-0 pointer-events-none">
         {petals.map((petal, index) => (
           <div

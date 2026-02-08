@@ -21,7 +21,7 @@ export default function MyChocolatePage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#3b1f1a] via-[#5a2f26] to-[#8b4a2b] relative overflow-hidden">
       <SetFavicon emoji="🍫" title="My Chocolate" />
-      {/* Floating chocolate icons */}}
+      {/* Floating chocolate icons */}
       <div className="absolute inset-0 pointer-events-none">
         {chocolates.map((item, index) => (
           <div

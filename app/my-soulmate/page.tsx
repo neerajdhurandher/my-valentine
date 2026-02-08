@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import NextButton from "@/components/NextButton";
 
 export const metadata: Metadata = {
   title: "My Soulmate",
@@ -100,6 +101,14 @@ export default function MySoulmatePage() {
           <button className="mt-8 bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
             Say Yes 💖
           </button>
+
+          <NextButton
+            hideBetween={{
+              start: new Date(2026, 1, 6),
+              end: new Date(2026, 1, 8),
+            }}
+            destination="/"
+          />
         </div>
       </div>
     </main>

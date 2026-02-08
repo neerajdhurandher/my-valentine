@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import NextButton from "@/components/NextButton";
 
 export default function MyRosePage() {
   const [displayedText, setDisplayedText] = useState("");
@@ -15,6 +16,7 @@ export default function MyRosePage() {
     favicon.setAttribute("href", `data:image/svg+xml,${encodeURIComponent(svg)}`);
     document.head.appendChild(favicon);
   }, []);
+
 
   const lyrics = [
     {
@@ -162,6 +164,16 @@ export default function MyRosePage() {
             <button className="bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
               Cherish This Moment ❤️
             </button>
+          </div>
+
+          <div className="pt-4">
+            <NextButton
+              hideBetween={{
+                start: new Date(2026, 1, 6),
+                end: new Date(2026, 1, 7),
+              }}
+              destination="/my-soulmate"
+            />
           </div>
         </div>
 

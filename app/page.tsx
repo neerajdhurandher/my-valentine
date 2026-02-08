@@ -2,21 +2,15 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import NextButton from "@/components/NextButton";
 
 export default function Home() {
   const router = useRouter();
-  const [countdown, setCountdown] = useState(10);
-  const [showNextButton, setShowNextButton] = useState(false);
-
+  const [countdown, setCountdown] = useState(5);
   useEffect(() => {
     const today = new Date();
     const month = today.getMonth() + 1;
     const date = today.getDate();
-
-    // Check if current date is greater than Feb 7
-    if (month === 2 && date > 7) {
-      setShowNextButton(true);
-    }
 
     const timer = setTimeout(() => {
       const dateMap: Record<string, string> = {
@@ -29,7 +23,7 @@ export default function Home() {
       if (route) {
         router.push(route);
       }
-    }, 10000);
+    }, 5000); // 5 seconds
 
     const countdownInterval = setInterval(() => {
       setCountdown((prev) => Math.max(prev - 1, 0));
@@ -83,15 +77,13 @@ export default function Home() {
           <span>✨</span>
           <span>💕</span>
 
-        {/* Next button for dates after Feb 7 */}
-        {showNextButton && (
-          <button
-            onClick={() => router.push("/my-rose")}
-            className="mt-8 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-bold py-3 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-          >
-            Next →
-          </button>
-        )}
+        <NextButton
+          hideBetween={{
+            start: new Date(2026, 1, 6),
+            end: new Date(2026, 1, 15),
+          }}
+          destination="/my-rose"
+        />
           <span>🌹</span>
         </div>
 

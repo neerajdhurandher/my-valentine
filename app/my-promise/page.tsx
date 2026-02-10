@@ -101,7 +101,7 @@ export default function MyPromisePage() {
               </div>
               <div className="bg-[#663399]/30 rounded-lg p-4 border border-[#FFD700]/30 hover:border-[#FFD700]/60 transition-all duration-300">
                 <p className="text-[#FFD700] font-semibold mb-2">🤞 Growth & Trust</p>
-                <p className="text-white/80 text-sm">To grow together, supporting each other's dreams</p>
+                <p className="text-white/80 text-sm">To grow together, supporting each other&rsquo;s dreams</p>
               </div>
               <div className="bg-[#663399]/30 rounded-lg p-4 border border-[#FFD700]/30 hover:border-[#FFD700]/60 transition-all duration-300">
                 <p className="text-[#FFD700] font-semibold mb-2">✨ Infinite Love</p>

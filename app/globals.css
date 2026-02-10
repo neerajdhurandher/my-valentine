@@ -370,3 +370,47 @@
 .animate-teddy-sway {
   animation: teddySway 2.8s ease-in-out infinite;
 }
+
+@keyframes promiseFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+.animate-promise-float {
+  animation: promiseFloat 4.5s ease-in-out infinite;
+}
+
+@keyframes promiseGlow {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+  }
+  50% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 25px rgba(255, 215, 0, 0.8));
+  }
+}
+
+.animate-promise-glow {
+  animation: promiseGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes promiseSway {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-8px) rotate(-4deg);
+  }
+  75% {
+    transform: translateY(-8px) rotate(4deg);
+  }
+}
+
+.animate-promise-sway {
+  animation: promiseSway 3s ease-in-out infinite;
+}

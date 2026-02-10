@@ -18,6 +18,7 @@ export default function Home() {
         "2-8": "/my-soulmate",
         "2-9": "/my-chocolate",
         "2-10": "/my-teddy",
+        "2-11": "/my-promise",
         // Add more dates as needed
       };
 

@@ -414,3 +414,107 @@
 .animate-promise-sway {
   animation: promiseSway 3s ease-in-out infinite;
 }
+@keyframes hugPulse {
+  0%, 100% {
+    strokeWidth: 2;
+    opacity: 0.4;
+  }
+  50% {
+    strokeWidth: 2.5;
+    opacity: 0.7;
+  }
+}
+
+.animate-hug-pulse {
+  animation: hugPulse 2s ease-in-out infinite;
+}
+
+@keyframes hugBloom {
+  0%, 100% {
+    r: 8px;
+    filter: drop-shadow(0 0 5px rgba(251, 191, 36, 0.5));
+  }
+  50% {
+    r: 12px;
+    filter: drop-shadow(0 0 15px rgba(251, 191, 36, 0.8));
+  }
+}
+
+.animate-hug-bloom {
+  animation: hugBloom 2.5s ease-in-out infinite;
+}
+
+@keyframes hugOrbit {
+  0% {
+    transform: translate(0, 0) scale(0.8);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(40px, 40px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+.animate-hug-orbit {
+  animation: hugOrbit 3s ease-in infinite;
+}
+
+@keyframes hugBeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}
+
+.animate-hug-beat {
+  animation: hugBeat 4s ease-in-out infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-float-up {
+  animation: floatUp linear forwards;
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentleFloat 3s ease-in-out infinite;
+}
+

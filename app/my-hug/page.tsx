@@ -154,7 +154,7 @@ export default function HugPage() {
         <div className="mt-12">
           <NextButton
             destination="/my-kiss"
-            text="Next: Kiss Day →"
+            text="Next: Kiss Day"
             hideBetween={{
               start: new Date(2026, 1, 6), // Feb 6
               end: new Date(2026, 1, 12), // Feb 12

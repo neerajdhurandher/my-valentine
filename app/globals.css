@@ -518,3 +518,139 @@
   animation: gentleFloat 3s ease-in-out infinite;
 }
 
+@keyframes kissPetalFall {
+  0% {
+    transform: translateY(0) rotate(0deg) translateX(0);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg) translateX(50px);
+    opacity: 0;
+  }
+}
+
+.animate-kiss-petal-fall {
+  animation: kissPetalFall linear forwards;
+}
+
+@keyframes kissGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px rgba(255, 20, 147, 0.5));
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 30px rgba(255, 20, 147, 0.9));
+    transform: scale(1.02);
+  }
+}
+
+.animate-kiss-glow {
+  animation: kissGlow 3s ease-in-out infinite;
+}
+
+@keyframes kissPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+.animate-kiss-pulse {
+  animation: kissPulse 2s ease-in-out infinite;
+}
+
+@keyframes kissBreath {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-3px) scale(1.01);
+  }
+}
+
+.animate-kiss-breath {
+  animation: kissBreath 4s ease-in-out infinite;
+}
+
+@keyframes kissShimmer {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(-2px);
+  }
+}
+
+.animate-kiss-shimmer {
+  animation: kissShimmer 2.5s ease-in-out infinite;
+}
+
+@keyframes kissSparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+.animate-kiss-sparkle {
+  animation: kissSparkle 2s ease-in-out infinite;
+}
+
+@keyframes kissFloatHeart {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-40px) scale(1);
+    opacity: 0;
+  }
+}
+
+.animate-kiss-float-heart {
+  animation: kissFloatHeart 4s ease-in-out infinite;
+}
+
+@keyframes kissBounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  25% {
+    transform: translateY(-15px) scale(1.05);
+  }
+  50% {
+    transform: translateY(0) scale(1);
+  }
+  75% {
+    transform: translateY(-8px) scale(1.02);
+  }
+}
+
+.animate-kiss-bounce {
+  animation: kissBounce 2s ease-in-out infinite;
+}
+
+@keyframes kissOrbit {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}

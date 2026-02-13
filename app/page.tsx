@@ -20,6 +20,7 @@ export default function Home() {
         "2-10": "/my-teddy",
         "2-11": "/my-promise",
         "2-12": "/my-hug",
+        "2-13": "/my-kiss",
         // Add more dates as needed
       };
 
